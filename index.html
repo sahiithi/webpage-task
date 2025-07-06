@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YAY IT'S BOGO!!!</h2>
+
+        <form id="checkout-form">
+
+            <!--Bundle 1 -->
+            <label class="bundle-option"> 
+                <div class="bundle-content">
+                    <div class="row">
+                        <div class="left">
+                            <input type="radio" name="bundle" value="1" data-price="10">
+                            <strong>1 Unit</strong>
+                            <span class="discount">10% Off</span>
+                        </div>
+                        <div class="right">
+                            <div class="discount-price">$10.00 USD</div>
+                            <div class="original-price">$24.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="selectors hidden">
+                        <label>#1</label>
+                        <select><option selected disabled>Size</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+                        <select><option selected disabled>Colour</option><option>Black</option><option>Blue</option><option>Red</option><option>Yellow</option></select>
+                    </div>
+                    </div>
+            </label>
+
+            <!--Bundle 2-->
+            <label class="bundle-option">
+                <div class="bundle-content">
+                    <div class="row">
+                        <div class="left"> 
+                            <input type="radio" name="bundle" value="2" data-price="18" checked>
+                            <strong>2 Units</strong>
+                            <span class="discount">20% Off</span>
+                        </div>
+                        <div class="right">
+                            <div class="most-popular">MOST POPULAR</div>
+                            <div class="discount-price">$18.00 USD</div>
+                            <div class="original-price">$48.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="selectors">
+                        <div>
+                        <label>#1</label>
+                        <select><option selected disabled>Size</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+                        <select><option selected disabled>Colour</option><option>Black</option><option>Blue</option><option>Red</option><option>Yellow</option></select>
+                        </div>
+                        <div>
+                            <label>#2</label>
+                            <select><option selected disabled>Size</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+                            <select><option selected disabled>Colour</option><option>Black</option><option>Blue</option><option>Red</option><option>Yellow</option></select>    
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <!--Bundle 3-->
+            <label class="bundle-option">
+                <div class="bundle-content">
+                    <div class="row">
+                        <div class="left">
+                            <input type="radio" name="bundle" value="3" data-price="24">
+                            <strong>3 Units</strong>
+                            <span class="discount">30% Off</span>
+                        </div>
+                        <div class="right">
+                            <div class="discount-price">$24.00 USD</div>
+                            <div class="original-price">$72.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="selectors hidden">
+                        <div>
+                            <label>#1</label>
+                            <select><option selected disabled>Size</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+                            <select><option selected disabled>Colour</option><option>Black</option><option>Blue</option><option>Red</option><option>Yellow</option></select>
+                        </div>
+                        <div>
+                            <label>#2</label>
+                            <select><option selected disabled>Size</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+                            <select><option selected disabled>Colour</option><option>Black</option><option>Blue</option><option>Red</option><option>Yellow</option></select>
+                        </div>
+                        <div>
+                            <label>#3</label>
+                            <select><option selected disabled>Size</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+                            <select><option selected disabled>Colour</option><option>Black</option><option>Blue</option><option>Red</option><option>Yellow</option></select>
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </form>
+
+        <div class="footer">
+            <div class="delivery-fee">
+                <span class="delivery">Free Delivery</span>
+                <span class="total">Total : <span id="total-price">$18.00 USD</span></span>
+            </div>
+                <button type="button" class="add-to-cart">
+                <span class="plus">+</span> Add to Cart
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

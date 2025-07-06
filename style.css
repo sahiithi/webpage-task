@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 4px;
+    max-width: 500px;
+    margin:auto;
+}
+
+h2 {
+    text-align: center;
+    color: #ff3a7c;
+    margin-bottom: 15px;
+}
+
+.bundle-option {
+    display: block;
+    border: solid 2px #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bundle-option .bundle-content {
+    display: flexbox;
+    flex-direction: column;
+}
+
+.bundle-option .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.bundle-option .left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bundle-option .right{
+    justify-content: center;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.discount {
+    background-color: #ff3a7c;
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.discount-price {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+}
+
+.original-price {
+    font-size: 0.75em;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: #484848;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.most-popular {
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    font-size: 0.8em;
+    border-radius: 0px 0px 0px 10px;
+    padding: 3px 6px;
+    display: flex;
+    background-color: #ff3a7c;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.delivery-fee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    margin-bottom: 10px;
+}
+
+.delivery {
+    color: #ff3a7c;
+    font-size: large;
+    font-weight: bold;
+}
+
+.total {
+    font-size: 1.1em;
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: #ff3a7c;
+    font-size: medium;
+    font-weight: bolder;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 1.2em; 
+}
+
+.selectors {
+    margin-top: 10px;
+}
+
+.bundle-option.selected {
+    border: 2px solid #ff3a7c;
+    background-color: #ffe8f1;
+}
+
+.hidden {
+    display: none;
+}
